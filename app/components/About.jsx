@@ -1,5 +1,19 @@
 import Image from "next/image"
 import pix from "./Image/profilePix.jpg"
+import { FaHtml5 } from "react-icons/fa";
+import { FaCss3 } from "react-icons/fa";
+import { BiLogoTailwindCss } from "react-icons/bi"
+import { FaBootstrap } from "react-icons/fa";
+import { SiJavascript } from "react-icons/si";
+import { FaReact } from "react-icons/fa";
+import { TbBrandNextjs } from "react-icons/tb";
+import { BiLogoFirebase } from "react-icons/bi";
+import { FaSquareGithub } from "react-icons/fa6";
+
+
+
+
+
 
 const About = () => {
   return (
@@ -18,21 +32,26 @@ const About = () => {
       </div>
       <div className="skils">
         <h2>TECHNICAL SKILLS</h2>
-        <ul className= "flex justify-evenly">
+        <h6>Tools, Framework and Libraries</h6>
+        <ul className="flex justify-evenly">
           <div className="">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Tailwind.css.</li>
+            <li><FaHtml5 />
+              HTML</li>
+            <li><FaCss3 /> CSS</li>
+            <li><BiLogoTailwindCss />
+              Tailwind.css.</li>
           </div>
           <div className="">
-            <li>Bootstrap</li>
-            <li>JavaScript</li>
-            <li>React.JS</li>
+            <li><FaBootstrap /> Bootstrap</li>
+            <li><SiJavascript /> JavaScript</li>
+            <li><FaReact /> React.JS</li>
           </div>
           <div className="">
-             <li>Next.JS</li>
-            <li>Firebase</li>
-            </div>
+            <li> <TbBrandNextjs />Next.JS</li>
+            <li> <BiLogoFirebase /> Firebase</li>
+            <li>
+              <FaSquareGithub /> Git</li>
+          </div>
         </ul>
       </div>
     </div>
