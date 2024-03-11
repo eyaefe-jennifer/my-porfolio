@@ -3,9 +3,9 @@ import logo from '../../public/je-logo.png'
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between bg-gray-400 h-[70px]">
+    <div className="flex justify-between  bg-skyBlue h-[100px]">
       <div className="logo">
-        <Image src ={logo} alt ="eyaefe Jennifer" className="img" />
+        <Image src ={logo} alt ="eyaefe Jennifer" priority className="img" />
       </div>
       <div className="navlist">
         <ul>
