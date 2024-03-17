@@ -37,24 +37,59 @@ body {
 
 .about {
     background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%230099ff" fill-opacity="0.8" d="M0,128L34.3,112C68.6,96,137,64,206,48C274.3,32,343,32,411,53.3C480,75,549,117,617,138.7C685.7,160,754,160,823,144C891.4,128,960,96,1029,74.7C1097.1,53,1166,43,1234,64C1302.9,85,1371,139,1406,165.3L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>');
-    @apply h-[300px] bg-cover bg-no-repeat pb-[1000px]
+    @apply mt-[-150px] bg-cover bg-no-repeat pb-[100px]
 }
 
 .about h2 {
-    @apply text-skyBlue text-[40px] pt-40 pl-20 font-extrabold 
+    @apply text-darkBlue text-[40px] 
+    pt-80 text-center font-extrabold 
 }
 .about .border {
-    @apply bg-white h-[2px] w-[200px] ml-20
+    @apply bg-white h-[2px] w-[200px]  flex justify-center m-auto
 }
 .about .aboutPix{
     @apply w-[350px] h-[400px] ml-48 mt-40 rounded-md
 }
 .about .aboutme-section{
-    @apply w-[450px] mt-40 ml-20
+    @apply w-[450px] mt-40 
 }
 .about .aboutme-section p{
     @apply text-[20px] text-darkBlue font-medium mt-2
 }
 .about .aboutme-section p span{
     @apply text-[38px] text-white font-medium  mr-1
+}
+.skills h1{
+    @apply text-[40px] text-darkBlue font-bold ml-20 mt-10
+}
+.skills h6{
+    @apply text-[26px] text-white font-semibold ml-20 
+}
+.about ul li{
+    @apply flex text-[28px] mt-5 text-white font-semibold
+}
+.about ul li .icons{
+    @apply text-darkBlue mr-4 text-[32px]  
+}
+.experience h2{
+    @apply text-skyBlue text-[40px] font-bold text-center pt-10
+}
+
+.experience h3 {
+    @apply text-white text-[20px]  pt-40
+}
+
+.experience h3 span{
+    @apply text-skyBlue
+}
+
+.experience h6{
+    @apply text-white text-[14px] pt-5
+}
+
+.experience ul{
+    @apply pt-20
+}
+.experience ul li {
+    @apply text-white text-[18px] pt-5 list-disc font-extralight ml-40
 }

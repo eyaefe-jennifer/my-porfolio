@@ -10,18 +10,13 @@ import { TbBrandNextjs } from "react-icons/tb";
 import { BiLogoFirebase } from "react-icons/bi";
 import { FaSquareGithub } from "react-icons/fa6";
 
-
-
-
-
-
 const About = () => {
   return (
 
     <div className='about'>
       <h2>About Me</h2>
       <div className="border"></div>
-      <div className="flex pt-16 ">
+      <div className="flex pt-[-1100px] justify-evenly">
         <div className="img-section">
           <Image src={pix} alt="about profile" priority className="aboutPix" />
         </div>
@@ -30,27 +25,30 @@ const About = () => {
           <p>Developed and Implemented project scope and timelines based on the design-develop-deploy process Collaborated with UX designers and Back End Developers and ensured coherence between all parties Tested feature prototypes for bugs and user experience.</p>
         </div>
       </div>
-      <div className="skils">
-        <h2>TECHNICAL SKILLS</h2>
+      <div className="skills">
+        <h1>TECHNICAL SKILLS</h1>
         <h6>Tools, Framework and Libraries</h6>
-        <ul className="flex justify-evenly">
+        <ul className="flex justify-evenly mt-10">
           <div className="">
-            <li><FaHtml5 />
-              HTML</li>
-            <li><FaCss3 /> CSS</li>
-            <li><BiLogoTailwindCss />
+            <li><FaHtml5 className="icons" />
+              HTML
+              </li>
+              <li><BiLogoTailwindCss className="icons" />
               Tailwind.css.</li>
+              <li> <TbBrandNextjs className="icons" />Next.JS</li>
+            
+          </div>
+          <div className=""> <li><FaCss3 className="icons" /> CSS</li>
+           
+            <li><SiJavascript className="icons" /> JavaScript</li>
+            <li> <BiLogoFirebase className="icons" /> Firebase</li>
           </div>
           <div className="">
-            <li><FaBootstrap /> Bootstrap</li>
-            <li><SiJavascript /> JavaScript</li>
-            <li><FaReact /> React.JS</li>
-          </div>
-          <div className="">
-            <li> <TbBrandNextjs />Next.JS</li>
-            <li> <BiLogoFirebase /> Firebase</li>
+          <li><FaBootstrap className="icons" /> Bootstrap</li>
+          <li><FaReact className="icons" /> React.JS</li>
+            
             <li>
-              <FaSquareGithub /> Git</li>
+              <FaSquareGithub className="icons" /> Git</li>
           </div>
         </ul>
       </div>
