@@ -1,5 +1,5 @@
 import Image from "next/image"
-import pix from "./Image/profilePix.jpg"
+import pix from "./Image/pic.jpeg"
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";
 import { BiLogoTailwindCss } from "react-icons/bi"
@@ -12,11 +12,11 @@ import { FaSquareGithub } from "react-icons/fa6";
 
 const About = () => {
   return (
-
     <div className='about'>
+      {/* <div className="svg"></div> */}
       <h2>About Me</h2>
-      <div className="border"></div>
-      <div className="flex pt-[-1100px] justify-evenly">
+      <div className="line"></div>
+      <div className="lg:flex xl:flex lg:justify-evenly ">
         <div className="img-section">
           <Image src={pix} alt="about profile" priority className="aboutPix" />
         </div>
@@ -28,7 +28,7 @@ const About = () => {
       <div className="skills">
         <h1>TECHNICAL SKILLS</h1>
         <h6>Tools, Framework and Libraries</h6>
-        <ul className="flex justify-evenly mt-10">
+        <ul className="flex lg:flex-row xs:flex-col lg:justify-evenly lg:mt-10  xs:mt-3 ">
           <div className="">
             <li><FaHtml5 className="icons" />
               HTML
@@ -53,6 +53,7 @@ const About = () => {
         </ul>
       </div>
     </div>
+    
 
 
 
